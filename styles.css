@@ -1,0 +1,171 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+/* Image Selection Section */
+#image-selection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Thumbnail Styles */
+.thumbnail {
+    margin: 10px;
+    width: 150px;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Slideshow Button Styles */
+#start-slideshow {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 20px; /* Adjusted padding for a better look */
+    font-size: 16px;
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Hover effect for start slideshow button */
+#start-slideshow:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Slideshow Section */
+#slideshow {
+    margin-top: 30px;
+}
+
+/* Slideshow Image Styles */
+#slideshow img {
+    max-width: 80%;
+    border-radius: 10px;
+}
+
+/* Slideshow Container Styles */
+.slideshow-container {
+    position: relative; /* Allows positioning of controls */
+    width: 100%; /* Full width */
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    overflow: hidden; /* Prevent overflow from causing scrollbars */
+}
+
+/* Slide Image Styles */
+#slide-image {
+    max-width: 100%; /* Limit width to 100% of container */
+    max-height: 100%; /* Limit height to 100% of container */
+    object-fit: contain; /* Maintain aspect ratio without cropping */
+}
+
+/* Slideshow Controls Styles */
+#slideshow-controls {
+    position: absolute; /* Position relative to the container */
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+    display: flex; /* Align buttons in a row */
+    gap: 10px; /* Space between buttons */
+}
+
+/* Control Button Styles */
+#slideshow-controls button {
+    padding: 10px 20px; /* Button padding */
+    font-size: 16px; /* Button font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    background-color: #007BFF; /* Blue background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Hover effect for slideshow control buttons */
+#slideshow-controls button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* General Button Styles */
+button {
+    padding: 10px 20px; /* General button padding */
+    font-size: 16px; /* General button font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Delete Button Styles */
+button.delete {
+    background-color: #f44336; /* Red background for delete */
+    color: white; /* White text */
+}
+
+/* Hover effect for delete button */
+button.delete:hover {
+    background-color: #e53935; /* Darker red on hover */
+}
+
+button.delete-selected {
+    background-color: #f44336; /* Red background for delete selected */
+    color: white; /* White text */
+    margin-top: 20px; /* Space above the button */
+    padding: 10px 20px; /* Padding for better appearance */
+    font-size: 16px; /* Font size */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Hover effect for delete selected images button */
+button.delete-selected:hover {
+    background-color: #e53935; /* Darker red on hover */
+}
+
+/* Upload Image Button Styles */
+button.upload {
+    background-color: #4CAF50; /* Green background for upload */
+    color: white; /* White text */
+    margin-top: 20px; /* Space above the button */
+    padding: 10px 20px; /* Padding for better appearance */
+    font-size: 16px; /* Font size */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Hover effect for upload button */
+button.upload:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Spacing for Back to Slideshow Link */
+a.back-to-slideshow {
+    display: block; /* Make it a block element for spacing */
+    margin-top: 30px; /* Space above the link */
+    font-size: 16px; /* Font size for the link */
+    color: #007BFF; /* Blue color for the link */
+    text-decoration: none; /* No underline */
+}
+
+/* Hover effect for Back to Slideshow Link */
+a.back-to-slideshow:hover {
+    text-decoration: underline; /* Underline on hover */
+}
